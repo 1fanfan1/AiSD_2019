@@ -1,7 +1,8 @@
-all: kmp
+all: kmpAndTest
 
-kmp: kmp.o test.o 
-	g++ kmp.o test.o -o kmp.exe
+kmpAndTest: kmp.o test.o 
+	g++ kmp.o  -o kmp.exe
+	g++ test.o -o test.exe -lgtest -lpthread
 
 kmp.o: kmp.cpp
 	g++ -c kmp.cpp

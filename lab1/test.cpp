@@ -1,4 +1,4 @@
-#include "gtest/gtest.h"
+#include <gtest/gtest.h>
 #include "kmp.h"
 
 TEST (algoritmKmpTest, substringExists) { 
@@ -7,7 +7,7 @@ TEST (algoritmKmpTest, substringExists) {
  
 TEST (algoritmKmpTest, substringDoesNotExist) { 
     ASSERT_EQ ("-1", algoritmKmp ("abcd", "abcef"));
-	ASSERT_EQ ("-1", algoritmKmp ("abcd", "ad"));
+    ASSERT_EQ ("-1", algoritmKmp ("abcd", "ad"));
 }
 
 int main(int argc, char **argv) {
