@@ -2,6 +2,8 @@
 #include <vector>
 #include <cassert>
 
+#include "kmp.h"
+
 using namespace std;
 
 vector <int> prefix_function(string form){

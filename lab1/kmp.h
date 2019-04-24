@@ -1,0 +1,1 @@
+string algoritmKmp(string text, string substring);
